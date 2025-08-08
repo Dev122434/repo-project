@@ -1,5 +1,8 @@
 from interfaz.formulario import BaseListWindow
-from main import Session, select, tk, ttk, messagebox, map_proveedores
+from sqlmodel import Session, select
+from tkinter import ttk, messagebox
+import tkinter as tk
+from maps import map_proveedores
 from models.entities import Compra, DetalleCompra
 from interfaz.detalle_compra import DetalleCompraWindow
 from database.conexion import engine
